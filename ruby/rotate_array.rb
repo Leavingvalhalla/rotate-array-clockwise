@@ -1,5 +1,14 @@
+# require 'pry'
+
 def rotate_array(arr, k)
-  # type your code in here
+  return [] if arr == []
+  k.times do
+    num = arr.pop
+    # binding.pry
+    arr.unshift(num)
+    # binding.pry
+  end
+  arr
 end
 
 if __FILE__ == $PROGRAM_NAME
